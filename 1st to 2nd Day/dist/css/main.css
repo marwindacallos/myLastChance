@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #d8d8ee;
+  background: #f7f7f7;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -30,7 +30,7 @@ a {
   height: 45rem;
 }
 
-.covid-response {
+.home .covid-response {
   width: 100%;
   height: 3.9rem;
   background-color: #242222;
@@ -46,13 +46,13 @@ a {
           align-items: center;
 }
 
-.covid-response a {
+.home .covid-response a {
   color: #959595;
   text-decoration: underline;
   font-weight: 600;
 }
 
-.nav-bar {
+.home .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,19 +69,19 @@ a {
           align-items: center;
 }
 
-.nav-logo {
+.home .nav-logo {
   padding-right: 10rem;
 }
 
-.nav-logo a {
+.home .nav-logo a {
   color: black;
 }
 
-.fa-airbnb {
+.home .nav-logo .fa-airbnb {
   font-size: 40px;
 }
 
-.nav-links {
+.home .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,7 @@ a {
           flex-direction: row;
 }
 
-.nav-links .main-link::after {
+.home .nav-links .main-link::after {
   content: "";
   margin-bottom: 20px;
   width: 10px;
@@ -99,26 +99,26 @@ a {
   color: yellow;
 }
 
-.nav-links a {
+.home .nav-links a {
   color: black;
   font-weight: bold;
 }
 
-.nav-links li {
+.home .nav-links li {
   margin-left: 20px;
 }
 
-.nav-hosting a {
+.home .nav-hosting a {
   color: black;
   font-weight: bold;
 }
 
-.fa-globe {
+.home .nav-hosting .fa-globe {
   font-size: 20px;
   color: black;
 }
 
-.nav-accounts {
+.home .nav-accounts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,16 +135,16 @@ a {
   border-radius: 30px;
 }
 
-.nav-accounts a {
+.home .nav-accounts a {
   color: dimgray;
 }
 
-.fa-hamburger {
+.home .nav-accounts .fa-hamburger {
   margin-left: 5px;
   font-size: 20px;
 }
 
-.fa-user-circle {
+.home .nav-accounts .fa-user-circle {
   font-size: 30px;
   margin-left: 10px;
 }
@@ -218,5 +218,77 @@ a {
   height: 2.8rem;
   background-color: black;
   border-radius: 15px;
+}
+
+.explore-nearby {
+  margin: 40px 50px;
+}
+
+.explore-nearby .explore-nearby-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.explore-nearby .nearby-places {
+  margin-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row: repeat(2, 1fr);
+}
+
+.explore-nearby .nearby-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18rem;
+  height: 6rem;
+  margin: 10px;
+}
+
+.explore-nearby .nearby-number-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+}
+
+.explore-nearby .nearby-number-desc {
+  margin-left: 20px;
+}
+
+.explore-nearby .nearby-number-desc-main {
+  font-weight: 600;
+}
+
+.explore-nearby .nearby-one-image {
+  background: url("/dist/images/nearby-one.jpg") center/cover no-repeat;
+}
+
+.explore-nearby .nearby-two-image {
+  background: url("/dist/images/nearby-two.jpg") center/cover no-repeat;
+}
+
+.explore-nearby .nearby-three-image {
+  background: url("/dist/images/nearby-three.jpeg") center/cover no-repeat;
+}
+
+.explore-nearby .nearby-four-image {
+  background: url("/dist/images/nearby-four.jpg") center/cover no-repeat;
+}
+
+.explore-nearby .nearby-five-image {
+  background: url("/dist/images/nearby-five.jpg") center/cover no-repeat;
+}
+
+.explore-nearby .nearby-six-image {
+  background: url("/dist/images/nearby-six.jpg") center/cover no-repeat;
 }
 /*# sourceMappingURL=main.css.map */
