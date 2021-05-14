@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 // BASIC RESET
 * {
  padding: 0;
@@ -382,7 +382,6 @@ a {
 }
 
 // DISCOVER EXPERIENCES
-
 .discoveriences {
  margin: auto 50px 2rem;
  .disc-title {
@@ -428,6 +427,7 @@ a {
   .disc-main-desc {
    margin-top: 0.5rem;
    font-size: 20px;
+   font-weight: 600;
   }
   .disc-sub-desc {
    font-size: 15px;
@@ -435,6 +435,7 @@ a {
  }
 }
 
+// INSPIRATION
 .inspiration {
  margin: 4rem 50px 2rem;
  .inspiration-title {
@@ -448,6 +449,91 @@ a {
   overflow-x: scroll;
   div {
    padding-right: 60px;
+  }
+ }
+}
+
+// Footer
+.footer-section {
+ background: rgb(240, 240, 240);
+ border: 1px solid rgb(212, 212, 212);
+ .about {
+  margin-top: 4rem;
+ }
+ .foot-content {
+  margin: 2rem 2rem 1.5rem;
+  font-size: 15px;
+  .foot-content-title {
+   font-weight: 600;
+  }
+  .foot-content-links {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   a {
+    color: black;
+    margin: 1rem 0 0;
+   }
+  }
+ }
+ .footer-lining {
+  width: 90%;
+  height: 1px;
+  background: rgb(212, 212, 212);
+  margin: auto;
+ }
+ .support-container {
+  margin-bottom: 4rem;
+ }
+ // LAST FOOTER
+ .last-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  .upper {
+   display: flex;
+   flex-direction: row;
+   margin: 1rem auto;
+   a {
+    color: black;
+   }
+   .upper-country {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 12rem;
+    font-size: 17px;
+    .fa-globe {
+     font-size: 18px;
+    }
+    .currencies {
+     display: flex;
+     width: 4rem;
+     justify-content: space-around;
+    }
+   }
+   .upper-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 8rem;
+    font-size: 20px;
+   }
+  }
+  .lower {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   width: 15rem;
+   margin-bottom: 1rem;
+
+   .dot {
+    width: 2px;
+    height: 2.5px;
+    background: black;
+   }
   }
  }
 }

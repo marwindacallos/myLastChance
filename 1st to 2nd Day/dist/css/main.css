@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -527,6 +527,7 @@ a {
 .discoveriences .discoveries .disc-main-desc {
   margin-top: 0.5rem;
   font-size: 20px;
+  font-weight: 600;
 }
 
 .discoveriences .discoveries .disc-sub-desc {
@@ -556,5 +557,140 @@ a {
 
 .inspiration .destinations-etc div {
   padding-right: 60px;
+}
+
+.footer-section {
+  background: #f0f0f0;
+  border: 1px solid #d4d4d4;
+}
+
+.footer-section .about {
+  margin-top: 4rem;
+}
+
+.footer-section .foot-content {
+  margin: 2rem 2rem 1.5rem;
+  font-size: 15px;
+}
+
+.footer-section .foot-content .foot-content-title {
+  font-weight: 600;
+}
+
+.footer-section .foot-content .foot-content-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-section .foot-content .foot-content-links a {
+  color: black;
+  margin: 1rem 0 0;
+}
+
+.footer-section .footer-lining {
+  width: 90%;
+  height: 1px;
+  background: #d4d4d4;
+  margin: auto;
+}
+
+.footer-section .support-container {
+  margin-bottom: 4rem;
+}
+
+.footer-section .last-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.footer-section .last-footer-container .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem auto;
+}
+
+.footer-section .last-footer-container .upper a {
+  color: black;
+}
+
+.footer-section .last-footer-container .upper .upper-country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 12rem;
+  font-size: 17px;
+}
+
+.footer-section .last-footer-container .upper .upper-country .fa-globe {
+  font-size: 18px;
+}
+
+.footer-section .last-footer-container .upper .upper-country .currencies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-section .last-footer-container .upper .upper-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 8rem;
+  font-size: 20px;
+}
+
+.footer-section .last-footer-container .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section .last-footer-container .lower .dot {
+  width: 2px;
+  height: 2.5px;
+  background: black;
 }
 /*# sourceMappingURL=main.css.map */
