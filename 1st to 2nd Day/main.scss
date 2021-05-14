@@ -380,3 +380,74 @@ a {
   }
  }
 }
+
+// DISCOVER EXPERIENCES
+
+.discoveriences {
+ margin: auto 50px 2rem;
+ .disc-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+ }
+ .disc-sub-title {
+  font-size: 30px;
+  font-weight: 400;
+ }
+ .discoveries {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  .disc {
+   display: flex;
+   flex-direction: column;
+  }
+  .disc-num-image {
+   width: 19rem;
+   height: 19rem;
+   border-radius: 10px;
+   margin-right: 18px;
+   // background: salmon;
+  }
+
+  .disc-one-image {
+   background: url("/dist/images/disc-one.jpg") center/cover no-repeat;
+  }
+  .disc-two-image {
+   background: url("/dist/images/disc-two.jpg") center/cover no-repeat;
+  }
+  .disc-three-image {
+   background: url("/dist/images/disc-three.jpg") center/cover no-repeat;
+  }
+
+  .disc-desc {
+   margin-top: 1rem;
+   font-size: 20px;
+   font-weight: 600;
+  }
+  .disc-main-desc {
+   margin-top: 0.5rem;
+   font-size: 20px;
+  }
+  .disc-sub-desc {
+   font-size: 15px;
+  }
+ }
+}
+
+.inspiration {
+ margin: 4rem 50px 2rem;
+ .inspiration-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 1.5rem auto 2rem;
+ }
+ .destinations-etc {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  div {
+   padding-right: 60px;
+  }
+ }
+}
