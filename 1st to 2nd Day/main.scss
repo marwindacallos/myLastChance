@@ -12,6 +12,7 @@
 body {
  background: #f7f7f7;
  font-family: "Open Sans", sans-serif;
+ overflow-x: hidden;
 }
 
 ul,
@@ -68,14 +69,7 @@ a {
  .nav-links {
   display: flex;
   flex-direction: row;
-
-  .main-link::after {
-   content: "";
-   margin-bottom: 20px;
-   width: 10px;
-   height: 10px;
-   color: yellow;
-  }
+  // position: relative;
 
   a {
    color: black;
@@ -122,6 +116,15 @@ a {
    margin-left: 10px;
   }
  }
+}
+
+.active-link::after {
+ content: "";
+ position: block;
+ bottom: -20px;
+ width: 10px;
+ height: 10px;
+ background: yellow;
 }
 
 // search bar
@@ -201,14 +204,11 @@ a {
   // flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row: repeat(2, 1fr);
  }
  .nearby-number {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 18rem;
-  height: 6rem;
   // border: 1px solid green;
   margin: 10px;
  }
@@ -241,17 +241,11 @@ a {
  .nearby-six-image {
   background: url("/dist/images/nearby-six.jpg") center/cover no-repeat;
  }
- .nearby-six {
-  display: flex;
-  margin: -6.6rem 40rem;
-  // border: 1px solid black;
- }
 }
 
 // LIVE ANYWHERE
 .live-anywhere {
- margin-top: 9.5rem;
- margin: 9.5rem 50px 40px;
+ margin: 2rem 50px 40px;
  position: relative;
 
  .live-anywhere-title {
@@ -310,6 +304,7 @@ a {
   a {
    color: rgb(87, 87, 87);
   }
+  opacity: 0;
  }
  .l-a-button-right {
   position: relative;
@@ -437,23 +432,46 @@ a {
 
 // INSPIRATION
 .inspiration {
- margin: 4rem 50px 2rem;
+ margin: 4rem 50px 1rem;
  .inspiration-title {
   font-size: 35px;
   font-weight: 700;
   margin: 1.5rem auto 2rem;
  }
  .destinations-etc {
+  width: max-content;
+  overflow-x: scroll;
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
   div {
-   padding-right: 60px;
+   padding-right: 2rem;
+   a {
+    color: black;
+   }
+  }
+ }
+ .inspirational-country {
+  margin: 1rem 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  div {
+   a {
+    color: black;
+   }
+  }
+  .i-c-country {
+   margin-bottom: 2rem;
+   .i-c-country-sub {
+    font-weight: lighter;
+    a {
+     color: rgb(98, 98, 98);
+    }
+   }
   }
  }
 }
 
-// Footer
+// FOOTER
 .footer-section {
  background: rgb(240, 240, 240);
  border: 1px solid rgb(212, 212, 212);
@@ -511,6 +529,9 @@ a {
      display: flex;
      width: 4rem;
      justify-content: space-around;
+     div {
+      text-decoration: underline;
+     }
     }
    }
    .upper-social-media {
@@ -528,6 +549,9 @@ a {
    align-items: center;
    width: 15rem;
    margin-bottom: 1rem;
+   a {
+    color: black;
+   }
 
    .dot {
     width: 2px;
