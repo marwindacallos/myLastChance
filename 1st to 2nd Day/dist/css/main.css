@@ -9,6 +9,7 @@
 body {
   background: #f7f7f7;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 ul,
@@ -91,14 +92,6 @@ a {
           flex-direction: row;
 }
 
-.home .nav-links .main-link::after {
-  content: "";
-  margin-bottom: 20px;
-  width: 10px;
-  height: 10px;
-  color: yellow;
-}
-
 .home .nav-links a {
   color: black;
   font-weight: bold;
@@ -147,6 +140,15 @@ a {
 .home .nav-accounts .fa-user-circle {
   font-size: 30px;
   margin-left: 10px;
+}
+
+.active-link::after {
+  content: "";
+  position: block;
+  bottom: -20px;
+  width: 10px;
+  height: 10px;
+  background: yellow;
 }
 
 .search-bar {
@@ -235,7 +237,6 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-row: repeat(2, 1fr);
 }
 
 .explore-nearby .nearby-number {
@@ -249,8 +250,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 18rem;
-  height: 6rem;
   margin: 10px;
 }
 
@@ -292,16 +291,8 @@ a {
   background: url("/dist/images/nearby-six.jpg") center/cover no-repeat;
 }
 
-.explore-nearby .nearby-six {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: -6.6rem 40rem;
-}
-
 .live-anywhere {
-  margin-top: 9.5rem;
-  margin: 9.5rem 50px 40px;
+  margin: 2rem 50px 40px;
   position: relative;
 }
 
@@ -368,6 +359,7 @@ a {
   height: 40px;
   background: white;
   border-radius: 50px;
+  opacity: 0;
 }
 
 .live-anywhere .l-a-button-left a {
@@ -535,7 +527,7 @@ a {
 }
 
 .inspiration {
-  margin: 4rem 50px 2rem;
+  margin: 4rem 50px 1rem;
 }
 
 .inspiration .inspiration-title {
@@ -545,6 +537,10 @@ a {
 }
 
 .inspiration .destinations-etc {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  overflow-x: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,11 +548,38 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow-x: scroll;
 }
 
 .inspiration .destinations-etc div {
-  padding-right: 60px;
+  padding-right: 2rem;
+}
+
+.inspiration .destinations-etc div a {
+  color: black;
+}
+
+.inspiration .inspirational-country {
+  margin: 1rem 0 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.inspiration .inspirational-country div a {
+  color: black;
+}
+
+.inspiration .inspirational-country .i-c-country {
+  margin-bottom: 2rem;
+}
+
+.inspiration .inspirational-country .i-c-country .i-c-country-sub {
+  font-weight: lighter;
+}
+
+.inspiration .inspirational-country .i-c-country .i-c-country-sub a {
+  color: #626262;
 }
 
 .footer-section {
@@ -658,6 +681,10 @@ a {
       justify-content: space-around;
 }
 
+.footer-section .last-footer-container .upper .upper-country .currencies div {
+  text-decoration: underline;
+}
+
 .footer-section .last-footer-container .upper .upper-social-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,6 +713,10 @@ a {
           align-items: center;
   width: 15rem;
   margin-bottom: 1rem;
+}
+
+.footer-section .last-footer-container .lower a {
+  color: black;
 }
 
 .footer-section .last-footer-container .lower .dot {
