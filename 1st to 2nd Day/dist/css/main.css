@@ -223,7 +223,7 @@ a {
   border-radius: inherit;
 }
 
-.search-bar .search-location-container :hover {
+.search-bar .search-location-container > div:hover {
   background: #e9e9e9;
 }
 
@@ -243,6 +243,7 @@ a {
   width: 14rem;
   border-radius: 4rem;
   margin-right: -4rem;
+  z-index: 1;
 }
 
 .search-bar .search-location-container div p {
@@ -255,6 +256,13 @@ a {
 .search-bar .search-location-container div a {
   color: #5a5a5a;
   margin-left: 1rem;
+}
+
+.search-bar .search-location-container .search-line-break {
+  width: 1px;
+  height: 2.5rem;
+  background: rgba(207, 207, 207, 0.808);
+  z-index: 100;
 }
 
 .search-bar .search-search {
@@ -710,11 +718,11 @@ a {
 }
 
 .footer-section .about {
-  margin-top: 4rem;
+  padding-top: 1rem;
 }
 
 .footer-section .foot-content {
-  margin: 2rem 2rem 1.5rem;
+  margin: 2rem 3rem 1.5rem;
   font-size: 15px;
 }
 
