@@ -125,41 +125,49 @@ a {
   }
  }
 
- .nav-hosting {
-  a {
-   color: black;
-   font-weight: bold;
-   padding: 0.5rem 1rem;
-  }
-  :hover {
-   background: white;
-   border: 1px solid rgb(228, 228, 228);
-   border-radius: 40px;
-  }
- }
-
- // navigation accounts
- .nav-accounts {
+ .nav-settings {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 3px;
-  border: rgb(212, 212, 212) 1px solid;
-  background: whitesmoke;
-  border-radius: 30px;
-
-  a {
-   color: rgb(105, 105, 105);
+  // justify-content: space-between;
+  .nav-hosting {
+   a {
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+   }
+   :hover {
+    background: white;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 40px;
+   }
   }
 
-  .fa-hamburger {
-   margin-left: 5px;
-   font-size: 20px;
-  }
+  // navigation accounts
+  .nav-accounts {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 3px;
+   border: rgb(212, 212, 212) 1px solid;
+   background: whitesmoke;
+   border-radius: 30px;
+   margin-left: 15px;
+   .nav-language a {
+    margin: 20px;
+   }
+   a {
+    color: rgb(105, 105, 105);
+   }
 
-  .fa-user-circle {
-   font-size: 30px;
-   margin-left: 10px;
+   .fa-hamburger {
+    margin-left: 5px;
+    font-size: 20px;
+   }
+
+   .fa-user-circle {
+    font-size: 30px;
+    margin-left: 10px;
+   }
   }
  }
 }
