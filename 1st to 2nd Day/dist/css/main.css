@@ -24,7 +24,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background: #e1e1e9;
+  background: #f4f4fa;
   border: 1px solid #ebe8e8;
   border-radius: 10px;
   z-index: 10000;
@@ -41,6 +41,7 @@ a {
           justify-content: center;
   margin: 10rem 3rem;
   padding: 0.5rem 0.8rem;
+  border: #c2c2c2 1px solid;
 }
 
 .dev-note .dev-note-title {
@@ -134,7 +135,7 @@ a {
   content: "";
   display: block;
   width: 0.5rem;
-  height: 2px;
+  height: 2.1px;
   margin: auto;
   position: relative;
   background: black;
@@ -161,7 +162,7 @@ a {
   content: "";
   display: block;
   width: 1.5rem;
-  height: 2px;
+  height: 2.1px;
   margin: auto;
   position: relative;
   background: black;
@@ -254,7 +255,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   left: 0;
-  top: 0;
+  top: -100%;
   width: 100%;
   height: 5.5rem;
   padding: 0 3rem;
