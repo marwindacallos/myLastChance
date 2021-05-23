@@ -28,7 +28,7 @@ a {
  position: fixed;
  top: 0;
  left: 0;
- background: rgb(225, 225, 233);
+ background: rgb(244, 244, 250);
  border: 1px solid rgb(235, 232, 232);
  border-radius: 10px;
  z-index: 10000;
@@ -38,6 +38,7 @@ a {
  justify-content: center;
  margin: 10rem 3rem;
  padding: 0.5rem 0.8rem;
+ border: rgb(194, 194, 194) 1px solid;
  .dev-note-title {
   font-weight: bold;
   font-size: larger;
@@ -105,7 +106,7 @@ a {
     content: "";
     display: block;
     width: 0.5rem;
-    height: 2px;
+    height: 2.1px;
     margin: auto;
     position: relative;
     background: rgb(0, 0, 0);
@@ -123,7 +124,7 @@ a {
     content: "";
     display: block;
     width: 1.5rem;
-    height: 2px;
+    height: 2.1px;
     margin: auto;
     position: relative;
     background: rgb(0, 0, 0);
@@ -209,11 +210,12 @@ a {
  align-items: center;
  justify-content: space-between;
  left: 0;
- top: 0;
+ top: -100%;
  width: 100%;
  height: 5.5rem;
  padding: 0 3rem;
  background-color: white;
+
  .nav-scrolled-search {
   width: 20rem;
   height: 3.2rem;
