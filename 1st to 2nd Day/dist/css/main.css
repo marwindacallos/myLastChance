@@ -1125,7 +1125,7 @@ a {
   background: black;
 }
 
-@media screen and (max-width: 1128px) {
+@media screen and (min-width: 1128px) {
   .home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1135,7 +1135,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     background: url("/dist/images/airbnbac.jpg") center/cover no-repeat;
-    height: 45rem;
+    height: 60rem;
   }
   .home .covid-response {
     width: 100%;
@@ -1168,7 +1168,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 25px 50px;
+    margin: 25px 10rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1355,138 +1355,9 @@ a {
     color: white;
     font-size: 14px;
   }
-  .search-home-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    margin: 5rem 2rem;
-    width: 90%;
-    height: 3rem;
-    background: #ebebeb;
-    border-radius: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (max-width: 1128px) and (min-width: 744px) {
-  .search-home-mobile {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1128px) {
-  .search-home-mobile div {
-    margin-left: 1.5rem;
-    color: #5f5f5f;
-    font-size: 17px;
-  }
-  .search-home-mobile div a {
-    color: black;
-  }
-  .fixed-nav-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    height: 5rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 1000;
-  }
-}
-
-@media screen and (max-width: 1128px) and (min-width: 744px) {
-  .fixed-nav-top {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1128px) {
-  .fixed-nav-top .top-search {
-    width: 90%;
-    padding: 0.8rem 1.8rem;
-    border-radius: 50px;
-    border-top: 0.5px solid rgba(240, 240, 240, 0.609);
-    border-left: 2.5px solid rgba(224, 223, 223, 0.609);
-    border-right: 2.5px solid rgba(224, 223, 223, 0.609);
-    border-bottom: 3px solid rgba(189, 189, 189, 0.609);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .fixed-nav-top .top-search div {
-    margin-right: 15px;
-  }
-  .fixed-nav-top .top-search div a {
-    color: black;
-    font-size: 18px;
-  }
-  .fixed-nav-top .top-search .top-search-text {
-    color: #8a8a8a;
-    font-size: 16px;
-  }
-  .fixed-nav-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0 8rem;
-    height: 3.9rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    border: 1px solid #ececec;
-    background: white;
-    z-index: 1000;
-    display: none;
-  }
-  .fixed-nav-bottom div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    cursor: pointer;
-  }
-  .fixed-nav-bottom div div {
-    font-size: 11px;
-  }
-  .fixed-nav-bottom div .fa-search {
-    font-size: 23px;
-    color: red;
-  }
-  .fixed-nav-bottom div .fa-heart,
-  .fixed-nav-bottom div .fa-user-circle {
-    font-size: 23px;
-    color: #b8b6b6;
-  }
   .search-bar {
     margin: 5px auto;
-    width: 85%;
+    width: 70rem;
     height: 4.8rem;
     border: 0.8px #b8b7b7 solid;
     border-radius: 4rem;
@@ -1551,7 +1422,7 @@ a {
   }
   .search-bar .search-search {
     position: absolute;
-    right: 8.5%;
+    right: 24%;
     z-index: 100;
   }
   .search-bar .search-search div {
@@ -1577,7 +1448,7 @@ a {
   .home-info {
     color: white;
     margin-top: 7rem;
-    margin-left: 3.5rem;
+    margin-left: 9rem;
   }
   .home-info br {
     margin-bottom: -10rem;
@@ -1611,7 +1482,7 @@ a {
     cursor: pointer;
   }
   .explore-nearby {
-    margin: 40px 50px;
+    margin: 40px 9rem;
   }
   .explore-nearby .explore-nearby-title {
     font-size: 35px;
@@ -1621,8 +1492,8 @@ a {
     margin-top: 15px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .explore-nearby .nearby-places div {
     cursor: pointer;
@@ -1670,7 +1541,7 @@ a {
     background: url("/dist/images/nearby-six.jpg") center/cover no-repeat;
   }
   .live-anywhere {
-    margin: 2rem 50px 40px;
+    margin: 2rem 9rem 40px;
     position: relative;
   }
   .live-anywhere .live-anywhere-title {
@@ -1679,8 +1550,8 @@ a {
     margin-bottom: 1.5rem;
   }
   .live-anywhere .house {
-    width: 19rem;
-    height: 19rem;
+    width: 27.5rem;
+    height: 27.5rem;
     border-radius: 10px;
     margin-right: 18px;
   }
@@ -1710,7 +1581,7 @@ a {
     font-weight: 600;
   }
   .live-anywhere .house-four {
-    display: none;
+    display: block;
   }
   .live-anywhere .l-a-button-left {
     position: relative;
@@ -1763,7 +1634,7 @@ a {
   .live-anywhere .become-a-host .become-a-host-image {
     background: url("/dist/images/hosting-image.jpg") center/cover no-repeat;
     width: 100%;
-    height: 25rem;
+    height: 40rem;
     border-radius: 20px;
   }
   .live-anywhere .become-a-host .bah-title {
@@ -1816,7 +1687,7 @@ a {
     color: black;
   }
   .discoveriences {
-    margin: auto 50px 2rem;
+    margin: auto 9rem 2rem;
   }
   .discoveriences .disc-title {
     font-size: 35px;
@@ -1850,8 +1721,8 @@ a {
             flex-direction: column;
   }
   .discoveriences .discoveries .disc-num-image {
-    width: 19rem;
-    height: 19rem;
+    width: 26.5rem;
+    height: 26.5rem;
     border-radius: 10px;
     margin-right: 18px;
   }
@@ -1878,7 +1749,7 @@ a {
     font-size: 15px;
   }
   .inspiration {
-    margin: 4rem 50px 1rem;
+    margin: 4rem 9rem 1rem;
   }
   .inspiration .inspiration-title {
     font-size: 35px;
@@ -1889,7 +1760,7 @@ a {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    overflow-x: scroll;
+    overflow-x: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1913,8 +1784,8 @@ a {
     margin: 1rem 0 4rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .inspiration .inspirational-country div a {
     color: black;
@@ -1936,7 +1807,7 @@ a {
     padding-top: 1rem;
   }
   .footer-section .foot-content {
-    margin: 2rem 3rem 1.5rem;
+    margin: 2rem 9rem 1.5rem;
     font-size: 15px;
   }
   .footer-section .foot-content .foot-content-title {
@@ -1945,8 +1816,8 @@ a {
   .footer-section .foot-content .foot-content-links {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .footer-section .foot-content .foot-content-links a {
     color: black;
